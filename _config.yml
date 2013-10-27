@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://mr.yeel.es# http://loomcore.github.io/mryeeles
+url: http://mr.yeel.es
 title: Mr Yeeles
-subtitle: Educational blog of Mr Yeeles
+subtitle: Collected writings of a neophyte educator
 author: Mr Yeeles
 simple_search: http://google.com/search
-description:
+description: Collected writings of a neophyte educator
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -26,13 +26,13 @@ email:
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: /mryeeles
-permalink: /blog/:year/:month/:day/:title/
+root: /
+permalink: /:year/:month/:day/:title/
 source: source
 destination: public/mryeeles
 plugins: plugins
 code_dir: downloads/code
-category_dir: blog/categories
+category_dir: categories
 markdown: rdiscount
 rdiscount:
   extensions:
@@ -41,8 +41,8 @@ rdiscount:
     - smart
 pygments: false # default python pygments have been replaced by pygments.rb
 
-paginate: 10          # Posts per page on the blog index
-pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
+paginate: 10         # Posts per page on the blog index
+pagination_dir: /  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
 excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 
@@ -90,8 +90,8 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name: mryeeles
+disqus_show_comment_count: true
 
 # Google Analytics
 google_analytics_tracking_id:
